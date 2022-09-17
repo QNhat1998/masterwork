@@ -98,6 +98,11 @@ p{
 
 .border-img {
     border-radius: 6px;
+    transition: 0.5s;
+}
+
+.border-img:hover{
+    transform: translateY(-0.5rem);
 }
 
 /* HEADER */
@@ -131,13 +136,60 @@ header .header_content .navbar-brand {
     color: var(--primary)
 }
 
+.header_content .navbar-light .navbar-brand:focus, 
+.header_content .navbar-light .navbar-brand:hover{
+    color: var(--primary);
+    opacity: 0.7;
+}
+
 header .header_content .navbar-nav .nav-item {
     padding: 0 15px;
+    position: relative;
 }
 
 .header_content .navbar-nav .nav-item .nav-link {
     padding: 14px 0;
     color: var(--title-color);
+    transition: all 0.5s ease;
+}
+
+.header_content .navbar-nav .nav-item .dropdown-menu{
+    padding: 1rem 0 0.5rem;
+}
+
+.header_content .navbar-nav .nav-item .dropdown-item{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--title-color);
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 14px;
+}
+
+.header_content .navbar-nav .nav-item .nav-link:hover,
+.header_content .navbar-nav .nav-item.active .nav-link,
+.header_content .navbar-nav .nav-item .dropdown-item:hover
+{
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.header_content .navbar-nav .nav-item .nav-link::before,
+.navbar-nav .nav-item .dropdown-item::before
+{
+    position: absolute;
+    content:'';
+    background-color: var(--primary);
+    width: 0px;
+    height: 2px;
+    bottom: 13px;
+    transition: all 0.5s;
+}
+
+.header_content .navbar-nav .nav-item .nav-link:hover::before,
+.navbar-nav .nav-item .dropdown-item:hover::before
+{
+    width: 20px;
 }
 
 .header_content .navbar-nav .nav-item .nav-link i{
@@ -187,14 +239,19 @@ header .header_content .navbar-nav .nav-item {
 }
 
 /* SERVICES */
-.services .title {
-    max-width: 750px;
-}
-
 .services_content .service_item {
     padding: 3rem 2rem;
     background-color: var(--light-bg-color);
     border-radius: 6px;
+    border: 1px solid #F7F9FC;
+    transition: 0.5s;
+}
+
+.services_content .service_item:hover{
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    border: 1px solid #eee;
+    transform: translateY(-0.5rem);
 }
 
 .services_content .service_item h3 {
@@ -275,12 +332,23 @@ header .header_content .navbar-nav .nav-item {
     color: #eee;
 }
 
+.content_center .btn-light:hover{
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
 /* NEWS */
 .news_content .news_items .news_item {
     border-radius: 6px;
     height: 100%;
     background-color: #fff;
     border: 1px solid #eee;
+    transition: 0.5s;
+}
+
+.news_content .news_items .news_item:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transform: translateY(-0.5rem);
 }
 
 .news_items .news_item a {
@@ -294,6 +362,11 @@ header .header_content .navbar-nav .nav-item {
     max-width: 100%;
     display: block;
     filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.news_items .news_item:hover img{
+    filter: grayscale(0);
 }
 
 .news_items .news_item p.date {
@@ -345,6 +418,11 @@ header .header_content .navbar-nav .nav-item {
     color: var(--title-color);
     font-weight: 600;
     display: block;
+    transition: 0.5s;
+}
+
+.news_items .news_item:hover .news_info h4 a{
+    color: var(--primary);
 }
 
 .news_items .news_item .news_info p {
@@ -360,11 +438,20 @@ header .header_content .navbar-nav .nav-item {
     color: var(--primary);
     font-size: 16px;
     font-weight: 600;
+    position: relative;
 }
 
 .news_items .news_item .news_info .btn-news i {
     vertical-align: middle;
-    font-size: 12px
+    font-size: 12px;
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    transition: 0.5s;
+}
+
+.news_items .news_item:hover .news_info .btn-news i{
+    right: -18px;
 }
 
 /* FAQ */
@@ -580,6 +667,11 @@ footer .footer_top .footer_item li a{
     line-height: 25px;
 }
 
+footer .footer_top .footer_item li a:hover,.footer_bottom .left_bottom a:hover{
+    color: var(--primary);
+    opacity: 0.8s;
+}
+
 footer .footer_top .form_email{
     background-color: #fff;
     padding: 2em;
@@ -659,6 +751,11 @@ footer .footer_bottom{
     display: inline-block;
     border-radius: 50%;
     text-align: center;
+    transition: 0.5s;
+}
+
+.footer_bottom .right_bottom li a:hover{
+    color: var(--primary);
 }
 
 button.backToTop {
