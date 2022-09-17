@@ -26,6 +26,15 @@ a {
     text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
 .theme-btn {
     line-height: 52px;
     padding: 0 30px;
@@ -131,8 +140,17 @@ header .header_content .navbar-nav .nav-item {
     color: var(--title-color);
 }
 
+.header_content .navbar-nav .nav-item .nav-link i{
+    font-size: 10px;
+    padding-left: 2px;
+}
+
 .header_content .navbar-nav .nav-item .nav-link.active {
     color: var(--primary)
+}
+
+.dropdown-toggle::after{
+    display: none;
 }
 
 /* BANNER */
@@ -536,7 +554,112 @@ header .header_content .navbar-nav .nav-item {
 }
 
 /* FOOTER */
+footer{
+    background-color: var(--light-bg-color);
+}
 
+footer .footer_top h3{
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+footer .footer_top .footer_item ul{
+    padding: 0;
+}
+
+footer .footer_top .footer_item li{
+    margin: 10px 0;
+}
+
+footer .footer_top .footer_item li a{
+    color: #656f7b;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+footer .footer_top .form_email{
+    background-color: #fff;
+    padding: 2em;
+    border-radius: var(--card-curve);
+    box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+}
+
+footer .footer_top .form_email h4{
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+footer .footer_top .form_email form{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer_top .form_email form input{
+    background: var(--light-bg-color);
+    border: none;
+    padding: 12px 20px;
+    outline: none;
+    width: 78%;
+    color: var(--title-color);
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+footer .footer_top .form_email form button{
+    background: var(--primary);
+    border: none;
+    outline: none;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 20%;
+    color: #fff;
+    border-radius: 6px; 
+}
+
+footer .footer_top .form_email p{
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+footer .footer_bottom{
+    border-top: 1px solid #eee;
+}
+
+.footer_bottom .left_bottom p{
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.footer_bottom .left_bottom a{
+    color: var(--title-color);
+}
+
+.footer_bottom .right_bottom ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footer_bottom .right_bottom li{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer_bottom .right_bottom li a{
+    color: var(--title-color);
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+}
 
 button.backToTop {
     position: fixed;
