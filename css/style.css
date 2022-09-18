@@ -856,6 +856,7 @@ button.btn-circle{
 
 .btn-circle .light{
     display: none;
+    color:black;
     border-color:white;
     background-color: yellow;
 }
