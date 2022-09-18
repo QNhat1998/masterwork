@@ -23,20 +23,42 @@ $(window).on("scroll", function () {
     }
 });
 
-$(".counter").each(function () {
-    $(this)
-        .prop("Counter", 0)
-        .animate(
-            {
-                Counter: $(this).text(),
+// $(".counter").each(function () {
+//     $(this)
+//         .prop("Counter", 0)
+//         .animate(
+//             {
+//                 Counter: $(this).text(),
+//             },
+//             {
+//                 duration: 2000,
+//                 easing: "swing",
+//                 step: function (now) {
+//                     now = Number(Math.ceil(now)).toLocaleString('en');
+//                     $(this).text(now);
+//                 },
+//             }
+//         );
+// });
+
+$(document).ready(function () {
+    $(".counter").each(function () {
+        var count = $(this);
+        var countTo = count.attr('data-count');
+        // console.log(countTo);
+        $({countNum:count.text()}).animate({
+                countNum:countTo,
             },
             {
-                duration: 2000,
-                easing: "swing",
-                step: function (now) {
-                    now = Number(Math.ceil(now)).toLocaleString('en');
-                    $(this).text(now);
+     
+                duration:3000,
+                easing:'linear',
+                step:function(){
+                    count.text(Math.floor(this.countNum));
                 },
-            }
-        );
+                complete:function(){
+                    count.text(this.countNum);
+                }
+            });
+    });
 });

@@ -69,7 +69,7 @@ p{
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     padding: 0 25px;
 }
 
@@ -127,6 +127,7 @@ header.nav-fixed {
     padding: 0;
     height: 70px;
     border-bottom: none;
+    background-color: #fff;
 }
 
 header .header_content .navbar-brand {
@@ -203,6 +204,38 @@ header .header_content .navbar-nav .nav-item {
 
 .dropdown-toggle::after{
     display: none;
+}
+
+.header_content .navbar-toggler{
+    border: none;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.header_content .navbar-toggler i{
+    color: #fff;
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.header_content .navbar-toggler .close{
+    display: block;
+}
+
+.header_content .navbar-toggler .open{
+    display: none;
+}
+
+.header_content .navbar-toggler.collapsed .close{
+    display: none;
+}
+
+.header_content .navbar-toggler.collapsed .open{
+    display: block;
 }
 
 /* BANNER */
@@ -779,4 +812,62 @@ button.backToTop {
 .backToTop.show {
     visibility: visible;
     opacity: 1;
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    /* HEADER */
+    header{
+        height:auto;
+    }
+
+    header .navbar-nav{
+        text-align: center;
+    }
+
+    .header_content .navbar-nav{
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .header_content .navbar-nav .nav-item .nav-link{
+        padding: 8px 0
+    }
+
+    /* BANNER */
+    section.banner{
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .title h3{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .theme-btn{
+        padding: 0 20px;
+        line-height: 44px
+    }
+}
+
+@media screen and (max-width: 667px){
+    .title h3{
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        padding: 0 30px;
+    }
 }
