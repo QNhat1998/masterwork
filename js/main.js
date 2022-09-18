@@ -23,24 +23,6 @@ $(window).on("scroll", function () {
     }
 });
 
-// $(".counter").each(function () {
-//     $(this)
-//         .prop("Counter", 0)
-//         .animate(
-//             {
-//                 Counter: $(this).text(),
-//             },
-//             {
-//                 duration: 2000,
-//                 easing: "swing",
-//                 step: function (now) {
-//                     now = Number(Math.ceil(now)).toLocaleString('en');
-//                     $(this).text(now);
-//                 },
-//             }
-//         );
-// });
-
 $(document).ready(function () {
     $(".counter").each(function () {
         var count = $(this);
@@ -62,3 +44,8 @@ $(document).ready(function () {
             });
     });
 });
+
+document.getElementById("btn-switch").onclick = function (){
+    document.getElementById("darkMode").classList.toggle("dark-mode");
+    document.getElementById("btn-switch").classList.toggle("dark-theme");
+}
