@@ -853,7 +853,7 @@ button.backToTop {
         font-size: 40px;
         line-height: 50px;
     }
-    .content .background_content .content_center .a{
+    .content .background_content .content_center a{
         margin-top:40px;
     }
 }
@@ -871,7 +871,7 @@ button.backToTop {
         line-height: 42px;
     }
 
-    .content .background_content .content_center .a{
+    .content .background_content .content_center a{
         margin-top: 30px;
     }
 }
