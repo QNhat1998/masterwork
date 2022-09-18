@@ -613,6 +613,7 @@ header .header_content .navbar-nav .nav-item {
     grid-gap: 50px;
     background-color: #fff;
     border-radius: 6px;
+    margin: 0 auto;
 }
 
 .testimonial_item .img_circle{
@@ -846,6 +847,28 @@ button.backToTop {
     section.banner{
         margin-top: 65px;
     }
+
+    /* PRODUCT */
+    .product_content .product_item h3{
+        margin-bottom: 14px;
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    /* FOOTER */
+    .footer_bottom{
+        display: block !important;
+    }
+
+    .footer_bottom .right_bottom{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .testimonial .testimonial_item{
+        padding: 2rem
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -874,10 +897,36 @@ button.backToTop {
     .content .background_content .content_center a{
         margin-top: 30px;
     }
+
+    .testimonial .testimonial_item{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .testimonial .testimonial_item .img_circle{
+        margin: 0 auto;
+    }
+
+    .testimonial .testimonial_item .feedback{
+        text-align: center;
+    }
+
+    .testimonial .testimonial_item .feedback i{
+        top: 0;
+        left: 0;
+    }
 }
 
-@media screen and (min-width: 576px){
+@media screen and (max-width: 576px){
     .container{
         padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    .product_content .product_item h3{
+        font-size: 24px;
+        line-height: 30px;
     }
 }
