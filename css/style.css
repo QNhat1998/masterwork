@@ -835,7 +835,7 @@ button.btn-circle{
     font-size: 30px;
     line-height: 65px;
     border-radius: 50%;
-    border: 3px solid;
+    border: none;
     transition: 1s;
 }
 
@@ -851,22 +851,22 @@ button.btn-circle{
     display: block;
     background-color: black;
     color: white;
-    border-color: white;
 }
 
 .btn-circle .light{
     display: none;
     color:black;
-    border-color:white;
     background-color: yellow;
 }
 
 .btn-circle.dark-theme i.dark{
     display: none;
+    transition: all 1s;
 }
 
 .btn-circle.dark-theme i.light{
     display: block;
+    transition: all 1s;
 }
 
 @media screen and (min-width: 1200px){
