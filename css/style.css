@@ -41,6 +41,7 @@ p{
     padding: 0 30px;
     font-weight: 700;
     font-size: 14px;
+    outline: none;
 }
 
 .outline-pink {
@@ -129,6 +130,10 @@ header.nav-fixed {
     height: 70px;
     border-bottom: none;
     background-color: #fff;
+}
+
+header .navbar,.services,.stats,.news,.products,.book,.dropdown-menu,.about,.faq,footer{
+    transition: 0.5s;
 }
 
 header .header_content .navbar-brand {
@@ -563,6 +568,7 @@ header .header_content .navbar-nav .nav-item {
     width: calc(100%/3);
     color: #4E5B61;
     border-bottom: 3px solid rgb(193, 193, 193);
+    transition: 0.5s;
 }
 
 .product_content .nav-tabs .nav-link:focus,
@@ -576,6 +582,7 @@ header .header_content .navbar-nav .nav-item {
     border: none;
     border-bottom: 3px solid var(--primary);
     color: var(--primary);
+    transition: 0.5s;
 }
 
 .product_content .tab-content {
@@ -710,7 +717,7 @@ footer .footer_top .footer_item li a:hover,.footer_bottom .left_bottom a:hover{
 footer .footer_top .form_email{
     background-color: #fff;
     padding: 2em;
-    border-radius: var(--card-curve);
+    border-radius: 6px;
     box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
 }
 
@@ -762,10 +769,12 @@ footer .footer_bottom{
 .footer_bottom .left_bottom p{
     line-height: 22px;
     color: var(--text-color);
+    transition: 0.5s;
 }
 
 .footer_bottom .left_bottom a{
     color: var(--title-color);
+    transition: 0.5s;
 }
 
 .footer_bottom .right_bottom ul{
