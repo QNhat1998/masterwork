@@ -50,6 +50,13 @@ ul {
     margin: 0;
 }
 
+.header{
+    color: var(--title-color);
+    font-size: 46px;
+    line-height: 55px;
+    font-weight: 800;
+}
+
 .theme-btn {
     line-height: 52px;
     padding: 0 30px;
@@ -924,13 +931,6 @@ button.btn-circle {
     transition: all 0.5s;
 }
 
-.aboutUs_top h2 {
-    color: var(--title-color);
-    font-size: 46px;
-    line-height: 55px;
-    font-weight: 800;
-}
-
 .aboutUs_bottom .aboutUs_text h3 {
     font-size: 36px;
     line-height: 44px;
@@ -1205,6 +1205,55 @@ button.btn-circle {
 
 .team .team_items .team_item:hover .team_info h3 a{
     color: var(--primary);
+}
+
+/* PAGE SERVICES */
+.services_bottom .services_left h3{
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.services_bottom .services_left h5{
+    font-size: 24px;
+    line-height: 30px;
+    color: #999;
+}
+
+.services_right .services_item{
+    padding: 0 30px;
+}
+
+.services_right .services_item a.icon{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background: var(--light-bg-color);
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+    box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+}
+
+.services_right .services_item h4 a{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--title-color);
+    line-height: 24px;
+}
+
+.services_right .services_item p{
+    line-height: 20px;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+/* BUSINESS */
+.business{
+    background-color: var(--light-bg-color);
+    transition: 0.5s;
 }
 
 @media screen and (min-width: 1200px) {
