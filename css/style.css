@@ -878,6 +878,28 @@ button.btn-circle{
     transition: all 1s;
 }
 
+/* JUMP PAGE */
+.jump-page{
+    background-color: var(--light-bg-color);
+    padding: 15px 20px;
+    margin-top: 90px;
+}
+
+.jump-page .container{
+    color: var(--title-color);
+    font-size: 14px;
+}
+
+
+.jump-page .container a{
+    color: var(--primary);
+    margin: 0 5px 0 0;
+    font-size: 14px;
+}
+
+/* PAGE ABOUT */
+
+
 @media screen and (min-width: 1200px){
     .container{
         max-width: 1200px;
