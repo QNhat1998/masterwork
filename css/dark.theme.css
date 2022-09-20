@@ -1,19 +1,14 @@
-:root {
-    --title: white;
-    --text: #8A8A8A;
-    --bg-black: #000000;
-    --bg-second-black: #171717;
-    --box-shadow: 1rem -1rem 3rem 12px rgb(255 255 255 / 20%);
-}
 
 .dark-mode .outline-pink {
-    border-color: var(--title);
-    color: var(--title);
+    border-color: var(--dark-title);
+    color: var(--dark-title);
 }
 
+.dark-mode .aboutUs_bottom .aboutUs_text li i,
 .dark-mode .left_banner .outline-pink {
-    border-color: #dc4f72;
-    color: #dc4f72;
+    border-color: var(--primary);
+    color: var(--primary);
+    opacity: 1;
 }
 
 .dark-mode .testimonial .title h3{
@@ -27,12 +22,17 @@
 .dark-mode .news,
 .dark-mode .products,
 .dark-mode .book,
+.dark-mode .aboutUs,
+.dark-mode .features,
 .dark-mode .header_content .navbar-nav .nav-item .dropdown-menu {
     background-color: var(--bg-black) !important;
 }
 
 .dark-mode .about,
 .dark-mode .faq,
+.dark-mode .sub_content,
+.dark-mode .solution,
+.dark-mode .team,
 .dark-mode footer {
     background-color: var(--bg-second-black) !important;
 }
@@ -40,12 +40,16 @@
 .dark-mode .header_content .navbar-nav .nav-item .nav-link,
 .dark-mode header .header_content .navbar-brand,
 .dark-mode .title h3,
+.dark-mode .aboutUs_bottom .aboutUs_text h3,
+.dark-mode .aboutUs_top h2,
 .dark-mode .product_content h3,
 .dark-mode footer .footer_top h3,
 .dark-mode .footer_bottom .right_bottom li a,
 .dark-mode .header_content .navbar-nav .nav-item .dropdown-item,
-.dark-mode .product_content nav .nav-link{
-    color: var(--title);
+.dark-mode .product_content nav .nav-link,
+.dark-mode .aboutUs_bottom .aboutUs_text li span,
+.dark-mode .sub_content .content_items .content_item h5{
+    color: var(--dark-title);
 }
 
 .dark-mode .header_content .navbar-light .navbar-brand:focus,
@@ -58,8 +62,11 @@
 .dark-mode .background_content .content_center p,
 .dark-mode .product_content p,
 .dark-mode .footer_bottom .left_bottom a,
-.dark-mode .footer_bottom .left_bottom p{
-    color: var(--text)
+.dark-mode .footer_bottom .left_bottom p,
+.dark-mode .aboutUs_bottom .aboutUs_text p,
+.dark-mode .sub_content .content_items .content_item p
+{
+    color: var(--dark-text)
 }
 
 .dark-mode .nav-tabs .nav-item.show .nav-link,
@@ -67,8 +74,9 @@
     background-color: transparent;
 }
 
-.dark-mode .border-img{
-    box-shadow: var(--box-shadow) !important;
+.dark-mode .border-img,
+.dark-mode .feature_items .feature_item{
+    box-shadow: var(--light-box-shadow) !important;
 }
 
 .dark-mode .news_content .news_items .news_item:hover,

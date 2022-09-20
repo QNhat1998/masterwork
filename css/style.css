@@ -21,6 +21,11 @@ body {
     --title-color: #2C3038;
     --text-color: #5a5a5a;
     --light-bg-color: #F7F9FC;
+    --dark-title: white;
+    --dark-text: #8A8A8A;
+    --bg-black: #000000;
+    --bg-second-black: #171717;
+    --light-box-shadow: 1rem -1rem 3rem 12px rgb(255 255 255 / 20%);
 }
 
 h2,
@@ -915,6 +920,10 @@ button.btn-circle {
 }
 
 /* PAGE ABOUT */
+.aboutUs{
+    transition: all 0.5s;
+}
+
 .aboutUs_top h2 {
     color: var(--title-color);
     font-size: 46px;
@@ -954,6 +963,10 @@ button.btn-circle {
 }
 
 /* SUB CONTENT */
+.sub_content{
+    transition: all 0.5s;
+}
+
 .sub_content .content_items .content_item h5 {
     font-size: 26px;
     line-height: 32px;
@@ -970,6 +983,7 @@ button.btn-circle {
 /* FEATURES */
 .features {
     background-color: var(--light-bg-color);
+    transition: all 0.5s;
 }
 
 .feature_items .feature_item {
@@ -1051,8 +1065,12 @@ button.btn-circle {
 }
 
 /* SOLUTION */
+.solution{
+    transition: all 0.5s;
+}
+
 .solution_content {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -1067,8 +1085,8 @@ button.btn-circle {
 .solution_content .solution_img a {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    transform: translate(-50%,-50%);
 }
 
 .solution_content .solution_img a i {
@@ -1081,22 +1099,6 @@ button.btn-circle {
     color: var(--primary);
     transition: all 0.5s;
     animation: ripple 1s linear infinite;
-}
-
-.solution_content .solution_img #dialog {
-    max-width: 750px;
-    margin: 40px auto;
-    position: relative;
-}
-
-.solution_content .solution_img #dialog iframe {
-    width: 100%;
-    height: 400px;
-    display: block;
-}
-
-.solution_content .solution_img #dialog.hide-iframe {
-    display: none !important;
 }
 
 .solution_content .request .modal-title {
@@ -1129,23 +1131,25 @@ button.btn-circle {
 /* TEAM */
 .team {
     background-color: var(--light-bg-color);
+    transition: all 0.5s;
 }
 
 .team .team_items .team_item {
     transition: all 0.3s;
+    border-radius: 5px;
 }
 
 .team_items .team_item .team_img {
     width: 100%;
     height: 250px;
     display: inline-block;
+    border-radius: 6px 6px 0 0;
     overflow: hidden;
     background: #f3f6f9;
 }
 
 .team_img img {
     display: block;
-    border-radius: 6px 6px 0 0;
 }
 
 .team_item .team_info {
@@ -1154,7 +1158,7 @@ button.btn-circle {
     border-radius: 0 0 6px 6px;
     border: 1px solid #eee;
     border-top: none;
-    margin-top: -6px;
+    margin-top: -8px;
 }
 
 .team_info a {

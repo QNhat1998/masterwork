@@ -28,24 +28,24 @@ $(document).ready(function () {
         var count = $(this);
         var countTo = count.attr('data-count');
         // console.log(countTo);
-        $({countNum:count.text()}).animate({
-                countNum:countTo,
-            },
+        $({ countNum: count.text() }).animate({
+            countNum: countTo,
+        },
             {
-     
-                duration:3000,
-                easing:'linear',
-                step:function(){
+
+                duration: 3000,
+                easing: 'linear',
+                step: function () {
                     count.text(Math.floor(this.countNum));
                 },
-                complete:function(){
+                complete: function () {
                     count.text(this.countNum);
                 }
             });
     });
 });
 
-document.getElementById("btn-switch").onclick = function (){
+document.getElementById("btn-switch").onclick = function () {
     document.getElementById("darkMode").classList.toggle("dark-mode");
     document.getElementById("btn-switch").classList.toggle("dark-theme");
 }
