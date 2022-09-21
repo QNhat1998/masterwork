@@ -4,10 +4,14 @@
     color: var(--dark-title);
 }
 
-.dark-mode .aboutUs_bottom .aboutUs_text li i,
 .dark-mode .left_banner .outline-pink {
     border-color: var(--primary);
     color: var(--primary);
+    opacity: 1;
+}
+
+.dark-mode .check-list li i{
+    background-color: white;
     opacity: 1;
 }
 
@@ -24,7 +28,9 @@
 .dark-mode .book,
 .dark-mode .aboutUs,
 .dark-mode .features,
-.dark-mode .header_content .navbar-nav .nav-item .dropdown-menu {
+.dark-mode .connect,
+.dark-mode .header_content .navbar-nav .nav-item .dropdown-menu,
+.dark-mode .servicesOur {
     background-color: var(--bg-black) !important;
 }
 
@@ -33,6 +39,7 @@
 .dark-mode .sub_content,
 .dark-mode .solution,
 .dark-mode .team,
+.dark-mode .business,
 .dark-mode footer {
     background-color: var(--bg-second-black) !important;
 }
@@ -47,7 +54,11 @@
 .dark-mode .footer_bottom .right_bottom li a,
 .dark-mode .header_content .navbar-nav .nav-item .dropdown-item,
 .dark-mode .product_content nav .nav-link,
-.dark-mode .aboutUs_bottom .aboutUs_text li span,
+.dark-mode .check-list li,
+.dark-mode .services_bottom .services_left h3,
+.dark-mode .services_right .services_item h4 a,
+.dark-mode .connect h3,
+.dark-mode .business_content .row_content h6 a,
 .dark-mode .sub_content .content_items .content_item h5{
     color: var(--dark-title);
 }
@@ -57,16 +68,10 @@
     opacity: 1;
 }
 
-.dark-mode .title p,
-.dark-mode .services_content .service_item p,
-.dark-mode .background_content .content_center p,
-.dark-mode .product_content p,
-.dark-mode .footer_bottom .left_bottom a,
-.dark-mode .footer_bottom .left_bottom p,
-.dark-mode .aboutUs_bottom .aboutUs_text p,
-.dark-mode .sub_content .content_items .content_item p
+.dark-mode p,
+.dark-mode .footer_bottom .left_bottom a
 {
-    color: var(--dark-text)
+    color: var(--dark-text) !important;
 }
 
 .dark-mode .nav-tabs .nav-item.show .nav-link,
