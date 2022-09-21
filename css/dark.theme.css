@@ -30,6 +30,7 @@
 .dark-mode .features,
 .dark-mode .connect,
 .dark-mode .header_content .navbar-nav .nav-item .dropdown-menu,
+.dark-mode .contactUs,
 .dark-mode .servicesOur {
     background-color: var(--bg-black) !important;
 }
@@ -40,6 +41,7 @@
 .dark-mode .solution,
 .dark-mode .team,
 .dark-mode .business,
+.dark-mode .help,
 .dark-mode footer {
     background-color: var(--bg-second-black) !important;
 }
