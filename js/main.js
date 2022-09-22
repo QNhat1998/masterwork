@@ -16,7 +16,7 @@ btn.on('click', function (e) {
 $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 70) {
+    if (scroll >= 80) {
         $("#header-scroll").addClass("nav-fixed");
     } else {
         $("#header-scroll").removeClass("nav-fixed");
